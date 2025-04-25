@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Little Wood Wonders - Handcrafted Kids' Furniture & Toys</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Handcrafted wooden toys and furniture for children. We create beautiful, safe, and durable pieces including play gyms, toy carts, and furniture." />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="shipping-banner">
+      Free Shipping on Orders Over $99!
+    </div>
+    <nav>
+      <div class="logo">Little Wood Wonders</div>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>Handcrafted with Love, Built to Last</h1>
+      <p>Beautiful wooden toys and furniture that grow with your child</p>
+    </header>
+
+    <main>
+      <div class="location-section">
+        <button id="location-button" class="location-button">
+          📍 Deliver to: <span id="selected-location">Select Location</span>
+        </button>
+      </div>
+
+      <div id="location-modal" class="location-modal">
+        <div class="modal-content">
+          <button id="close-modal" class="close-modal">×</button>
+          <h2>Enter Your Location</h2>
+          <form id="location-form" class="location-form">
+            <input type="text" id="zipcode" placeholder="Enter ZIP code" pattern="[0-9]{5}" required />
+            <p id="location-error" class="location-error">Please enter a valid US ZIP code</p>
+            <button type="submit">Set Location</button>
+          </form>
+        </div>
+      </div>
+
+      <section id="products" class="products">
+        <h2>Our Creations</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="/products/play-gyms.html">
+              <img src="https://images.pexels.com/photos/3933025/pexels-photo-3933025.jpeg" alt="Wooden Play Gym" />
+              <h3>Play Gyms</h3>
+              <p>Safe and sturdy play gyms for active toddlers</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/products/study-tables.html">
+              <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg" alt="Kids Study Table" />
+              <h3>Study Tables</h3>
+              <p>Ergonomic study spaces for growing minds</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/products/toy-carts.html">
+              <img src="https://images.pexels.com/photos/3933028/pexels-photo-3933028.jpeg" alt="Wooden Toys" />
+              <h3>Toy Carts</h3>
+              <p>Classic wooden toys that spark imagination</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/products/pikler-sets.html">
+              <img src="https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg" alt="Pikler Triangle" />
+              <h3>Pikler Sets</h3>
+              <p>Montessori-inspired climbing sets for natural development</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/products/rocking-horse.html">
+              <img src="https://images.pexels.com/photos/6621339/pexels-photo-6621339.jpeg" alt="Wooden Rocking Horse" />
+              <h3>Rocking Horse</h3>
+              <p>Classic wooden rocking horse for endless adventures</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/products/activity-board.html">
+              <img src="https://images.pexels.com/photos/6621324/pexels-photo-6621324.jpeg" alt="Busy Board" />
+              <h3>Activity Board</h3>
+              <p>Interactive busy board for sensory development</p>
+              <span class="view-details">View Details</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>Our Story</h2>
+        <p>At Little Wood Wonders, we craft beautiful, safe, and durable wooden furniture and toys for children. Using premium materials like solid wood, MDF, and acrylic, we create pieces that combine functionality with timeless design.</p>
+        <div class="features">
+          <div class="feature">
+            <h3>Safe Materials</h3>
+            <p>Child-safe finishes and materials</p>
+          </div>
+          <div class="feature">
+            <h3>Custom Design</h3>
+            <p>Personalized pieces for your child</p>
+          </div>
+          <div class="feature">
+            <h3>Built to Last</h3>
+            <p>Durable construction for years of use</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Interested in our products? We'd love to hear from you!</p>
+        <form id="contact-form" class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Little Wood Wonders. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
